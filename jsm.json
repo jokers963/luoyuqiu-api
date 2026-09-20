@@ -1,5 +1,5 @@
 {
-	"spider":"./pg.jar",
+	"spider":"https://jokers963.github.io/luoyuqiu-api/pg.jar",
 	"logo":"https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
 	"ads":["mozai.4gtv.tv","pv.vipwm.cc","static-mozai.4gtv.tv"],
 	"headers":{"host":"hlsztemgsplive.miguvideo.com","header":{"User-Agent":"bingcha/1.1 (mianfeifenxiang) "}},
