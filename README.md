@@ -1,14 +1,27 @@
 # 落雨秋远程接口
 
-这是给“落雨秋”播放器使用的远程配置，完整保留自当前可用接口的 JSON 配置。
+这是给“落雨秋”播放器使用的远程配置和 Spider 资源。
 
-播放器配置地址：
+仓库同时保留两套入口：
+
+- `jsm.json`：配套 `pg.jar`、`js/` 和 `lib/` 的完整资源包，推荐优先测试。
+- `config.json`：从原接口保存的完整配置快照。
+
+## 推荐入口
+
+```text
+https://jokers963.github.io/luoyuqiu-api/jsm.json
+```
+
+`jsm.json` 使用相对路径加载同目录下的 `pg.jar`、`js/` 和 `lib/`，因此这些文件必须保持现有目录结构。
+
+原配置快照地址：
 
 ```text
 https://raw.githubusercontent.com/jokers963/luoyuqiu-api/main/config.json
 ```
 
-如果 GitHub Pages 已启用，也可以使用：
+原配置快照的 Pages 地址：
 
 ```text
 https://jokers963.github.io/luoyuqiu-api/config.json
@@ -16,8 +29,9 @@ https://jokers963.github.io/luoyuqiu-api/config.json
 
 ## 当前状态
 
-- `config.json` 已保留站点、解析器、直播、规则和其他配置。
-- JSON 中原有的 `spider` 地址已保留。
-- 原 `spider` 地址当前返回 404，因此依赖其中自定义 `Guard` 类的站点，需要替换为有效且有授权的 Spider JAR 后才能完整恢复。
+- `config.json` 已保留原接口的站点、解析器、直播、规则和其他配置。
+- `pg.jar` 的 MD5 已与 `pg.jar.md5` 校验一致。
+- `jsm.json`、`pg.jar`、`js/` 和 `lib/` 已按相对路径放置。
+- 原 `config.json` 中的旧 `spider` 地址当前返回 404；新资源包使用本仓库内的 `pg.jar`。
 
 仓库是公开的，因为播放器需要无需登录即可读取配置。配置内的上游地址和参数也会随仓库公开，请仅保留你有权使用的内容。
