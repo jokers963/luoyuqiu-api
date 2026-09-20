@@ -1,5 +1,8 @@
 {
 	"spider":"./pg.jar",
+	"logo":"https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
+	"ads":["mozai.4gtv.tv","pv.vipwm.cc","static-mozai.4gtv.tv"],
+	"headers":{"host":"hlsztemgsplive.miguvideo.com","header":{"User-Agent":"bingcha/1.1 (mianfeifenxiang) "}},
 	"sites":[
 		{
 			"key": "豆瓣",
@@ -1005,8 +1008,12 @@
 			}
 		],
 		"parses": [
+			{"name":"王","type":1,"url":"http://122.228.84.103:7777/api/?key=4Dk5tdayvY6NZufEMG&url="},
+			{"name":"二","type":1,"url":"http://110.42.7.182:880/api/?key=7e84f07dc78fbb3406d64a1ab7d966b3&url="},
+			{"name":"小","type":1,"url":"http://43.136.176.188:91/api/?key=4ef232e96172b0bda78d393c695fe7c4&url="},
+			{"name":"帅","type":1,"url":"http://pan.qiaoji8.com/tvbox/neibu.php?url="}
 		],
 		"flags":["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu"],
-		"wallpaper": "http://饭太硬.top/深色壁纸/api.php",
+		"wallpaper": "http://王二小放牛娃牛逼.999888987.xyz",
 		"disabled_wallpaper":"http://www.kf666888.cn/api/tvbox/img"
 }
