@@ -5,6 +5,7 @@
 仓库同时保留两套入口：
 
 - `jsm.json`：配套 `pg.jar`、`js/` 和 `lib/` 的完整资源包，当前唯一推荐用于实际测试。
+- `config-pg.json`：基于 `pg.jar` 的精简远程配置，只保留依赖文件齐全的站点。
 - `config.json`：从原接口保存的完整配置快照。
 - `config-like.json`：仅用于保留原接口的 63 个站点显示和配置结构；原接口的 `Wex...Guard` 类不在 `pg.jar` 中，不保证可运行。
 
@@ -21,6 +22,12 @@ https://jokers963.github.io/luoyuqiu-api/config-like.json
 ```
 
 `jsm.json` 使用本仓库的 `pg.jar`，并通过相对路径加载同目录下的 `js/` 和 `lib/`，因此这些文件必须保持现有目录结构。
+
+直接配置地址：
+
+```text
+https://jokers963.github.io/luoyuqiu-api/config-pg.json
+```
 
 原配置快照地址：
 
